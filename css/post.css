@@ -1,0 +1,118 @@
+@import "all/general.css";
+@import "all/componentes.css";
+
+/*ESTILOS GENERALES DEL POST*/
+.foto .icono {
+    padding: 0;
+}
+.foto .icono:hover,
+.foto .icono:focus {
+    opacity: .8;
+}
+.informacion {
+    width: calc(100% - 110px);
+    padding: 5px 10px;
+}
+.informacion h1,
+.informacion h2 {
+    font-size: 16px;
+}
+.informacion h1 a,
+.informacion h2 a {
+    color: #000;
+}
+.informacion a img {
+    height: 12px;
+}
+.informacion a span {
+    color: #2fc834;
+}
+.tiempo {
+    width: 60px;
+    color: #818181;
+}
+/*ESTILOS PROPIOS*/
+section {
+    max-width: 500px;
+    margin: 0 auto;
+    border: 1px solid #e2e2e2;
+}
+.publicacion {
+    padding: 20px;
+    border-bottom: 1px solid #e2e2e2;
+}
+.publicacion header,
+.comentarios li {
+    display: flex;
+}
+.publicacion article {
+    padding: 10px 0;
+}
+.publicacion footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.publicacion footer .grupo {
+    display: flex;
+    align-items: center;
+}
+.publicacion footer .grupo span {
+    margin: 0 15px;
+}
+.publicacion aside {
+    display: flex;
+    flex-wrap: wrap;
+}
+.publicacion aside a {
+    color: #2b63ff;
+    display: flex;
+    align-items: center;
+    outline: none;
+}
+.publicacion aside a::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #2b63ff;
+    margin: 0 8px;
+}
+.publicacion aside a:first-child::before {
+    content: none;
+}
+.publicacion aside a:hover,
+.publicacion aside a:focus {
+    color: #2fc834;
+}
+.publicacion aside a:hover::before,
+.publicacion aside a:focus::before {
+    background: #2fc834;
+}
+.comentarios {
+    padding: 20px;
+    border-bottom: 1px solid #e2e2e2;
+}
+.comentarios li p {
+    font-size: 14px;
+}
+.nuevo_comentario {
+    padding: 20px;
+    display: flex;
+}
+.nuevo_comentario .icono {
+    background: #2fc834;
+}
+.nuevo_comentario .icono span {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+.nuevo_comentario input {
+    width: calc(100% - 50px);
+    background: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+}
